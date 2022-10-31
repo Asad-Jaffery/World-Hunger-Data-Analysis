@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal
+# Combating World Hunger through Data Analysis: Project Proposal
 ## Project 'Double H'
 ### Authors:
 
@@ -13,8 +13,12 @@ Info-201: Technical Foundations of Informatics - The Information School - Univer
 Autumn 2022
 
 ## Abstract
+Prevalence of undernourishment varies from country to country and percentages have been fluctuating over the years, making world hunger a difficult problem to combat. The dataset we have chosen takes into account the percentage of undernourishment in over 150 countries from the years 2001 to 2019. Overall, world hunger was decreasing, however, in light of recent economic and agricultural inflation, in many countries percentages have begun to rise again. In our report we are investigating world hunger through data and analysis. Our goal is to identify the problems that are causing worldwide hunger, who is being affected, and what can be done in the future. The information we analyze from the data set of worldwide hunger is crucial in combatting this issue.
+
 
 ## Keywords
+World Hunger, Education, Hunger Ratees by year
+
 
 ## Introduction
 Hunger and undernourishment are some of the leading causes of severe or fatal health consequences globally, especially in children. The main issue is lack of access to food resources and a well balanced diet. By 2030, the United Nations set a target to “end hunger” as part of their [Sustainable Development](https://sdgs.un.org/goals) goals. Looking at this dataset, however, hunger and undernourishment is still a problem around the world, even if percentages have declined. We plan to address the issue of undernourishment, by looking at the trends around the world through this dataset, and to highlight which countries need more support than others in food supply and dietary education. By measuring which populations have the largest percentage of insufficient diets, action can be taken to truly end world hunger.
