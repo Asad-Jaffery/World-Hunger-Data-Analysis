@@ -17,7 +17,7 @@ Prevalence of undernourishment varies from country to country and percentages ha
 
 
 ## Keywords
-World Hunger, Education, Hunger Ratees by year
+World Hunger, Education, Hunger Rates by year
 
 
 ## Introduction
@@ -27,7 +27,7 @@ Hunger and undernourishment are some of the leading causes of severe or fatal he
 After a steady decline over the last decade, world hunger is again, on the rise. The COVID-19 pandemic has had a brutal effect on the entire world, especially those on the brink of starvation. Unfortunately, world hunger has reached nearly 10 percent since 2019, and the problem seems to only be getting worse as the global rate of inflation is also rising [(World Against Hunger)](https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/). Thus, we have decided to pick a data set that studies the rates of hunger in 176 countries around the world, on a year by year basis in hopes to contribute to the fight against hunger.
 
 #### Direct and Indirect Stakeholders
-The people who are directly involved with the data (direct stakeholders) are those who are getting an insufficient caloric intake. Since the data set we are looking at examines 176 countries, these people can be located in any of these countries. Individuals who would be examining this data, or using it creating solutions for the issue of world hunger would be people who are indirect stakeholders.
+The people who are directly involved with the data (direct stakeholders) are those who are getting an insufficient caloric intake. Since the data set we are looking at examines 176 countries, these people can be located in any of these countries. Individuals who would be examining this data, or using it creating solutions for the issue of world hunger would be considered indirect stakeholders.
 
 #### Human Values
 The idea of attaining access to food being a human right is widely accepted. Infact, the 1966 International Covenant on Economic, Social and Cultural Rights 'enshrined’ that idea after the right to food was recognized as a right to an adequate standard of living in the 1948 Universal Declaration of Human Rights [(Office of the High Commissioner for Human Rights)](https://www.ohchr.org/sites/default/files/Documents/Publications/FactSheet34en.pdf). Thus, the stance that we are taking, is one of forward progression. Every human has a right to food, and the issue of hunger is one that we, as privileged individuals, are attempting to alleviate. Our human values are intrinsic rights that every human being should have.
@@ -66,16 +66,3 @@ Assuming that we find the answer to world hunger, there are many implications ar
 - The first limitation to using this dataset is that the data fails to represent all people within a country. Many undernourished people or those struggling with hunger may live in remote areas, where they will be missed by the statisticians. Additionally, not every country across the globe has an accurate way to measure total census, therefore, the percentage of hunger (which is based on the main population) may not be accurate. One way to address this limitation is to create a universal system for tracking population changes. This could be one system where every person is entered, that way all data remains true to the times.
 
 - Another limitation in trying to solve the problem of world hunger is the disconnect between the data, policies, and actual implementation. Though this data is helpful to support policies that would push for more incentives to improve nourishment, it is very difficult to carry out actions and resources, making them readily accessible for everyone. Just by looking at these statistics little can actually be done to end world hunger, however, these statistics are the first steps in highlighting the problem, and thus the first steps in making change.
-
-
-
-
-
-
-
-**TODO**: Edit this file. Your project proposal goes here.
-
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically:
-
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
