@@ -46,15 +46,15 @@ What countries have been hit hardest by the problems of hunger and undernourishm
 
 How has the price of common food goods in all countries affected by hunger and undernourishment(defined as a % of population greater than 10%) from the years 2003 to 2020 affected the rates of hunger and undernourishment?
 
-## The Dataset
+## The Dataset(See data Directory)
 
-Prevalence-of-undernourishment.csv, Measures the percentage of population which has an insufficient amount of caloric intake to meet the minimum requirement for energy needs for any given population. 3344 Unique observations. 4 separate variables.
-https://www.kaggle.com/datasets/whenamancodes/hunger-and-undernourishment-data
+|Data File Name |Purpose |Number of Observations |Number of Variables| Citation|
+|---------------| -----------------|-----------------|-----------------|-----------------|
+|[prevalence-of-undernourishment.csv](./prevalence-of-undernourishment.csv) | Measures the percentage of population which has an insufficient amount of caloric intake to meet the minimum requirement for energy needs for any given population.|3344 Unique observations | 4 variables|Roser, Max. Ritchie, Hannah. _Hunger and Undernourishment_. 2019 https://www.kaggle.com/datasets/whenamancodes/hunger-and-undernourishment-data |
 
-This data set allows us to easily determine the countries which are most greatly affected by hunger. To go along with this, this set of data provides nearly two decades of tracking which allows us to look for trends on both a global and country scale. Originally publish online at OurWorldInData.org by Max Roser and Hannah Ritchie in 2019 in the article Hunger and Undernourishment
 
-Global_food_prices.csv, Global Food Price data from 76 unique countries and 1,500 markets, data pulled from the World Food Programme, goods tracked include beans, fish, maize, rice and sugar dating as far back as 1992. 2,050,000 observations, 18 separate variables
-https://www.kaggle.com/datasets/lasaljaywardena/global-food-prices-dataset
+[prevalence-of-undernourishment.csv](./prevalence-of-undernourishment.csv) allows us to easily determine the countries which are most greatly affected by hunger. To go along with this, this set of data provides nearly two decades of tracking which allows us to look for trends on both a global and country scale. Dataset Originally publish online at OurWorldInData.org by Max Roser and Hannah Ritchie in 2019 in the article _Hunger and Undernourishment_. By combining data from FAO, IFAD, UNICEF, WFP and WHO to create the data set above.
+
 
 ## Expected Implications
 
