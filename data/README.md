@@ -5,7 +5,9 @@ In our project, we use the following data files and Application Programming Inte
 ## Data files (TODO: Update/delete for your PROJECT)
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[prevalence-of-undernourishment.csv](./prevalence-of-undernourishment.csv) | File contains data on hunger and undernourishment throughout the world dating back to 2001. Data continues up to 2019. The set contains 3344 Unique observations and 4 separate variables.
+|[prevalence-of-undernourishment.csv](./prevalence-of-undernourishment.csv) | File contains data on hunger and undernourishment throughout the world dating back to 2001. Data continues up to 2019. The set contains 3344 Unique observations and 4 separate variables.|
+[country-wide-average.csv](./country-wide-average.csv)| Shows the malnutrition rates by giving the 4 values of broad types of malnutrition, wasting, stunting, underweight, and overweight. 152 Observations and 8 Variables |
+[global-hunger-index.csv](./global-hunger-index.csv)| Presents the hunger index value for countries across the globe. 128 Observations and 5 Variables|
 
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
