@@ -1,6 +1,6 @@
 library("tidyverse")
 
-country_wise_average <- read.csv("~/info201/project-AsadJafferyy/data/country-wide-average.csv")
+country_wide_average <- read.csv("~/info201/project-AsadJafferyy/data/country-wide-average.csv")
 undernourishment <- read.csv("~/info201/project-AsadJafferyy/data/prevalence-of-undernourishment.csv")
 hunger_index <- read.csv("~/info201/project-AsadJafferyy/data/global-hunger-index.csv")
 
