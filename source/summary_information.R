@@ -1,11 +1,11 @@
 library("tidyverse")
 
-country_wise_average <- read.csv("~/info201/project-AsadJafferyy/data/country-wise-average.csv")
+country_wise_average <- read.csv("~/info201/project-AsadJafferyy/data/country-wide-average.csv")
 undernourishment <- read.csv("~/info201/project-AsadJafferyy/data/prevalence-of-undernourishment.csv")
 hunger_index <- read.csv("~/info201/project-AsadJafferyy/data/global-hunger-index.csv")
 
 
-View(country_wise_average)
+View(country_wide_average)
 View(global_malnutrition)
 View(undernourishment)
 View(hunger_index)
@@ -17,12 +17,12 @@ summary_info <- list()
 
 
 # Country with highest percentage of underweight population 
-summary_info$highest_underweight <- country_wise_average %>% 
+summary_info$highest_underweight <- country_wide_average %>% 
   filter(Underweight == max(Underweight, na.rm = TRUE)) %>%
   pull(Country)
 
 # Country with lowest percentage of underweight population
-summary_info$lowest_underweight <- country_wise_average %>% 
+summary_info$lowest_underweight <- country_wide_average %>% 
   filter(Underweight == min(Underweight, na.rm = TRUE)) %>%
   pull(Country)
 
