@@ -6,7 +6,6 @@ hunger_index <- read.csv("~/info201/project-AsadJafferyy/data/global-hunger-inde
 
 
 View(country_wide_average)
-View(global_malnutrition)
 View(undernourishment)
 View(hunger_index)
 
