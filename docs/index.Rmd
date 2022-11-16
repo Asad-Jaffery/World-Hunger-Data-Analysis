@@ -28,7 +28,7 @@ highest_underweight()
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
+highest_undernourishment
 ```
 
 > `r msg` Hope you have a good day!! 
