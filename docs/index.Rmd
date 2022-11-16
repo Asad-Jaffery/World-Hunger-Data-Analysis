@@ -21,17 +21,22 @@ knitr::opts_chunk$set(echo = TRUE)
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)
-source("../source/summary_information_version2.R")
-highest_underweight()
+source("~/info201/project-AsadJafferyy/source/summary_information.R")
+
 ```
 
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
+<<<<<<< HEAD
 highest_undernourishment
+=======
+msg <- highest_underweight()
+msg
+>>>>>>> 0a0225b91e56297976782c856d7d6680ea667696
 ```
 
-> `r msg` Hope you have a good day!! 
+
 
 ## ABOUT THIS FILE: 
 
@@ -40,7 +45,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}
-summary(cars)
+#summary(cars)
 ```
 
 ## Including Plots
@@ -48,7 +53,7 @@ summary(cars)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+#plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

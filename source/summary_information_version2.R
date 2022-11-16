@@ -12,8 +12,13 @@ highest_underweight1 <- country_wide_average %>%
   filter(Underweight == max(Underweight, na.rm = TRUE)) %>%
   pull(Country)
 
+<<<<<<< HEAD
 highest_underweight <- function(){
   t <- paste("Country with the highest percentage of underweight population is ", highest_underweight1)
+=======
+highest_underweight <- function(highest_underweight){
+  t <- print(highest_underweight)
+>>>>>>> 0a0225b91e56297976782c856d7d6680ea667696
   return(t) 
 }
 
