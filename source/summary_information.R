@@ -4,7 +4,7 @@ country_wide_average <- read.csv("https://raw.githubusercontent.com/info201b-au2
 global_hunger_index <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-AsadJafferyy/main/data/global-hunger-index.csv")
 undernourishment_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-AsadJafferyy/main/data/prevalence-of-undernourishment.csv")
 
-View(country_wide_average)
+
 
 
 # Country with highest percentage of underweight population 
@@ -13,7 +13,7 @@ highest_underweight1 <- country_wide_average %>%
   pull(Country)
 
 highest_underweight <- function(){
-  t <- paste("Country with the highest percentage of underweight population is ", highest_underweight1)
+  t <- paste("Country with the highest percentage of underweight population is", highest_underweight1)
   return(t) 
 }
 
@@ -24,7 +24,7 @@ lowest_underweightr <- country_wide_average %>%
   pull(Country)
 
 lowest_underweight <- function(){
-  t <- paste("Country with the lowest percentage of underweight population is ", lowest_underweightr)
+  t <- paste("Country with the lowest percentage of underweight population is", lowest_underweightr)
   return(t)
 }
 
@@ -36,7 +36,7 @@ highest_undernourishment1 <- undernourishment_data %>%
   pull(Entity)
 
 highest_undernourishment <- function(){
-  t <- paste("Country with the highest percentage of undernourished population is ", highest_undernourishment1)
+  t <- paste("Country with the highest percentage of undernourished population is", highest_undernourishment1)
   return(t)
 }
 
@@ -48,7 +48,7 @@ lowest_undernourishment1 <- undernourishment_data %>%
   pull(Entity)
 
 lowest_undernourishment <- function(){
-  t <- paste("Country with the lowest percentage of undernourished population is ", highest_undernourishment1)
+  t <- paste("Country with the lowest percentage of undernourished population is", highest_undernourishment1)
   return(t)
 }
 
@@ -60,7 +60,7 @@ highest_GHI1 <- global_hunger_index %>%
   pull(Entity)
 
 highest_GHI <- function(){
-  t <- paste("Country with the highest GHI (Global Hunger Index) score is ", highest_GHI1)
+  t <- paste("Country with the highest GHI (Global Hunger Index) score is", highest_GHI1)
   return(t)
 }
 
@@ -72,6 +72,6 @@ lowest_GHI1 <- global_hunger_index %>%
   pull(Entity)
 
 lowest_GHI <- function(){
-  t <- paste("Country with the lowest GHI (Global Hunger Index) score is ", lowest_GHI1)
+  t <- paste("Country with the lowest GHI (Global Hunger Index) score is", lowest_GHI1)
   return(t)
 }
