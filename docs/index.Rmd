@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ## What is this file for?
@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)
+
 source("../source/summary_information.R")
 source("../source/undernourishment_chart_1_code_source.R")
 source("../source/country_wide_chart_2_code_source.R")
@@ -30,7 +31,6 @@ source("../source/country_wide_chart_2_code_source.R")
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
-highest_undernourishment
 
 msg <- highest_underweight()
 msg
@@ -57,3 +57,7 @@ You can also embed plots, for example:
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Summary of datasets:
+Since we are studying world hunger, we decided to use our in order to determine which countries are in the worst conditions and which are in the best conditions. `r highest_underweight1` is the country that has the highest percentage of population that is considered to be 'underweight', while `r lowest_underweightr` is the country with the lowest percentage of underweight population. Next, we examined our undernourishment data set in order to find that `r highest_undernourishment1` is the country with the highest percentage of population undernourished, whereas `r lowest_undernourishment1`, are all tied for the lowest percentage of population of undernourished. Lastly, it is important to understand the global hunger index (GHI), which tracks hunger by region. `r highest_GHI1` has the highest GHI score, and `r lowest_GHI1` are all tied for the lowest.
