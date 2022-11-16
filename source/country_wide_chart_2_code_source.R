@@ -12,7 +12,7 @@ country_wide_average <- country_wide_average %>%
 
 # Create bar graph
 ggplot(country_wide_average) +
-  geom_col(mapping = aes(x = Country, y = Underweight)
+  geom_col(mapping = aes(x = Country, y = Underweight))
 
 ggplot(country_wide_average) +
   geom_col(
