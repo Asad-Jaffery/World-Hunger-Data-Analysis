@@ -22,18 +22,18 @@ knitr::opts_chunk$set(echo = TRUE)
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)
 source("~/info201/project-AsadJafferyy/source/summary_information.R")
+source("~/info201/project-AsadJafferyy/source/undernourishment_chart_1_code_source.R")
+source("~/info201/project-AsadJafferyy/source/aggregated_table_undernourishment_data.R")
 
 ```
 
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
-<<<<<<< HEAD
 highest_undernourishment
-=======
+
 msg <- highest_underweight()
 msg
->>>>>>> 0a0225b91e56297976782c856d7d6680ea667696
 ```
 
 
