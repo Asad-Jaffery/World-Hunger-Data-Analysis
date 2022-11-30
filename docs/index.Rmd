@@ -1,5 +1,5 @@
 ---
-title: "Combating World Hunger through Data Analysis: Project Proposal"
+title: "Combating World Hunger through Data Analysis"
 author: "Asad Jaffery, Beliz Ozhan, Curt Tanaka"
 date: "11/14/2022"
 output: html_document
@@ -10,10 +10,6 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-
 source("../source/summary_information.R")
 source("../source/undernourishment_chart_code.R")
 source("../source/countrywide_average_code.R")
@@ -21,33 +17,40 @@ source("../source/aggregated_table_undernourishment_data.R")
 ```
 
 
-# Summary of Datasets:
-Since we are studying world hunger, we decided to use our in order to determine which countries are in the worst conditions and which are in the best conditions. `r highest_underweight1` is the country that has the highest percentage of population that is considered to be 'underweight', while `r lowest_underweightr` is the country with the lowest percentage of underweight population. Next, we examined our undernourishment data set in order to find that `r highest_undernourishment1` is the country with the highest percentage of population undernourished, whereas `r lowest_undernourishment1`, are all tied for the lowest percentage of population of undernourished. Lastly, it is important to understand the global hunger index (GHI), which tracks hunger by region. `r highest_GHI1` has the highest GHI score, and `r lowest_GHI1` are all tied for the lowest.
-\n
+## Paragraph Summary of Datasets
+Since we are studying world hunger, we decided to use various datasets in order to determine which countries are in the worst conditions and which are in the best conditions. From our country wide average data set we can determine that the `r highest_underweight` , and `r lowest_underweight` . Next, we examined our prevalence of undernourishment data set in order to find that `r highest_undernourishment1` is the country with the highest percentage of population undernourished, whereas `r lowest_undernourishment1`, are all tied for the lowest percentage of population of undernourished. Lastly, it is important to understand the global hunger index (GHI), which tracks hunger by region. `r highest_GHI1` has the highest GHI score, and `r lowest_GHI1` are all tied for the lowest. These data analysis values represent the varying severity of world hunger around the globe, and highlights areas where most efforts to combat world hunger must be placed. 
 
-# Undernourishment Aggregated Table
+
+
+
+## Aggregated Table: Prevalence of Undernourishment by Country
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
-view_undernourishment_table()
+knitr::kable(undernourishment_table, format="markdown")
 ```
+<!-- source: https://stackoverflow.com/questions/33319457/display-a-data-frame-as-table-in-r-markdown -->
 
-# Underweight Population by Country
+
+This table shows the prevalence of undernourishment of the population based on the total population via a percentage value. This value comes from 2019, the most recent date from our data set, for each country. 
+
+
+
+
+## Percentage of Underweight Population by Country Wide Average
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 plot_underweight_pop_country()
 ```
 
 
-
 The chart depicting underweight population by country represents the total population of each country that is underweight. The reason we selected this dataset is because malnutrition is continuously a growing problem and makes people's health more vulnerable. This original data set includes many other data points about each country including the percent of the population which is  "wasting", “overweight", “stunting" , or “underweight". We selected the “underweight” category as it best answered our research question of how to combat world hunger and where efforts need to be made the most, based on the percentage of underweight people. 
 
 
-\n
 
-# Undernourishment by Countries
+
+## Prevalence of Undernourishment by Countries from 2001 to 2019
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 plot_undernourishment_by_countries(c("Afghanistan", "Belize", "Ethiopia", "Thailand"))
 ```
 
 
-This chart depicts the prevalence of undernourishment by country and by year. This percentage is based on the total population of each country by year, respectively. Through trends in the dataset we can see that for many countries the total prevalence of undernourishment is decreasing, but still continues to be a pressing problem for developing or third world countries. It is important to track the prevalence of undernourishment both by year and country to accurately understand the problem of hunger across the world. 
-
+This chart depicts the prevalence of undernourishment by country and by year. This percentage is based on the total population of each country by year, respectively. Through trends in the dataset we can see that for many countries the total prevalence of undernourishment is decreasing, but still continues to be a pressing problem for developing or third world countries. It is important to track the prevalence of undernourishment both by year and country to accurately understand the problem of hunger across the world. For this chart, only few countries are graphed at a time, and can be changed in order to not overwhelm user experience, but still depict a meaningful trend.  
 
