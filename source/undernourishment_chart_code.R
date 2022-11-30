@@ -36,3 +36,4 @@ plot_undernourishment_by_countries <- function(Countries) {
 }
 
 plot_undernourishment_by_countries(c("Afghanistan", "Belize", "Ethiopia", "Thailand"))
+

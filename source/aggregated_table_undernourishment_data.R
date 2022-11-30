@@ -8,6 +8,7 @@ colnames(undernourishment_data)[1] = "Country"
 # Group_by() table
 undernourishment_table <- undernourishment_data %>% 
   select(Country, Year, Prevalence_of_Undernourishment) %>%
+  filter(Year == max(Year)) %>%
   group_by(Country)
 
 # View table
