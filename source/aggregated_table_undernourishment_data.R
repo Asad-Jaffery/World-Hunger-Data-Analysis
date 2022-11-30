@@ -11,7 +11,12 @@ undernourishment_table <- undernourishment_data %>%
   filter(Year == max(Year)) %>%
   group_by(Country)
 
+
+
 # View table
-View(undernourishment_table)
+view_undernourishment_table <- function(){
+  return(undernourishment_table)
+}
+
 
 

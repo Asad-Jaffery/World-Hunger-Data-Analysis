@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 source("../source/summary_information.R")
 source("../source/undernourishment_chart_code.R")
 source("../source/countrywide_average_code.R")
-
+source("../source/aggregated_table_undernourishment_data.R")
 ```
 
 
@@ -25,6 +25,10 @@ source("../source/countrywide_average_code.R")
 Since we are studying world hunger, we decided to use our in order to determine which countries are in the worst conditions and which are in the best conditions. `r highest_underweight1` is the country that has the highest percentage of population that is considered to be 'underweight', while `r lowest_underweightr` is the country with the lowest percentage of underweight population. Next, we examined our undernourishment data set in order to find that `r highest_undernourishment1` is the country with the highest percentage of population undernourished, whereas `r lowest_undernourishment1`, are all tied for the lowest percentage of population of undernourished. Lastly, it is important to understand the global hunger index (GHI), which tracks hunger by region. `r highest_GHI1` has the highest GHI score, and `r lowest_GHI1` are all tied for the lowest.
 \n
 
+# Undernourishment Aggregated Table
+```{r echo=FALSE, eval=TRUE, message=FALSE}
+view_undernourishment_table()
+```
 
 # Underweight Population by Country
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
