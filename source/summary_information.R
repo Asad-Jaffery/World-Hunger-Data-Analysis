@@ -12,10 +12,7 @@ highest_underweight1 <- country_wide_average %>%
   filter(Underweight == max(Underweight, na.rm = TRUE)) %>%
   pull(Country)
 
-highest_underweight <- function(){
-  t <- paste("Country with the highest percentage of underweight population is", highest_underweight1)
-  return(t) 
-}
+highest_underweight <- paste("country with the highest percentage of underweight population is", str_to_title(highest_underweight1))
 
 
 # Country with lowest percentage of underweight population
@@ -23,10 +20,7 @@ lowest_underweightr <- country_wide_average %>%
   filter(Underweight == min(Underweight, na.rm = TRUE)) %>%
   pull(Country)
 
-lowest_underweight <- function(){
-  t <- paste("Country with the lowest percentage of underweight population is", lowest_underweightr)
-  return(t)
-}
+lowest_underweight <- paste("the country with the lowest percentage of underweight population is", str_to_title(lowest_underweightr))
 
 # Country with highest percentage of undernourished population (recent date)
 
