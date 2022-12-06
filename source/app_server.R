@@ -16,7 +16,7 @@ data_undernourishment <- undernourishment_data %>%
   select(Country, Year, Prevalence_of_Undernourishment)
 
 server <- function(input, output){
-    
+  
   output$distPlot <- renderPlot({
     
     ggplot(data_undernourishment %>% filter(Country == input$Country)) +
