@@ -7,6 +7,7 @@ library(tidyr)
 # interactive visualization one 
 
 undernourishment_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-AsadJafferyy/main/data/prevalence-of-undernourishment.csv")
+malnutrition_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-AsadJafferyy/main/data/malnutrition-estimates.csv")
 colnames(undernourishment_data)[4] = "Prevalence_of_Undernourishment"
 colnames(undernourishment_data)[1] = "Country"
 
@@ -15,9 +16,10 @@ data_undernourishment <- undernourishment_data %>%
   group_by(Country) %>%
   select(Country, Year, Prevalence_of_Undernourishment)
 
+
 server <- function(input, output){
   
-  output$distPlot <- renderPlot({
+  output$UndernourishmentChart<- renderPlot({
     
     ggplot(data_undernourishment %>% filter(Country == input$Country)) +
       geom_line(mapping = aes(x = Year, y = Prevalence_of_Undernourishment,
@@ -29,3 +31,16 @@ server <- function(input, output){
 }
 
 #------------------------------------------------------------------------------#
+
+#interactive Visualization two
+
+data_malnutrition <- malnutrition_data %>%
+  na.omit() %>%
+  group_by(Year, Country) %>%
+  select(Country, Year, Underweight) %>%
+  
+  
+
+
+
+
