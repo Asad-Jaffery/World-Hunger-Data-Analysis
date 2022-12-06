@@ -37,7 +37,7 @@ server <- function(input, output){
 data_malnutrition <- malnutrition_data %>%
   na.omit() %>%
   group_by(Year, Country) %>%
-  select(Country, Year, Underweight) %>%
+  select(Country, Year, Underweight) 
   
   
 
