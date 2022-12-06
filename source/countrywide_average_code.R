@@ -21,10 +21,10 @@ get_country_underweight_pop()
 plot_underweight_pop_country <- function() {
   p <- ggplot(data = get_country_underweight_pop()) + 
     geom_col(mapping = aes(x = Country, y = Underweight)) +
+    scale_x_discrete(guide = guide_axis(angle = 90)) +
     labs(title = "Perecentage of Underweight Population in Countries", 
          x = "Country",
          y = "Underweight Population")
-  
   return(p)   
 } 
 
