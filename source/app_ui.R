@@ -1,6 +1,9 @@
 library(shiny)
 source("app_server.R")
+
+#------------------------------------------------------------------------------#
 #page one content 
+
 page_one <- tabPanel(
 "Introduction"                   
 
@@ -15,7 +18,7 @@ page_two <- tabPanel(
   sidebarLayout(
     sidebarPanel(
       selectInput(inputId = "Country",
-                  label = "Select Country",
+                  label = "Select Country/Region",
                   choices = c(data_undernourishment$Country))
     ),
   mainPanel(
@@ -27,30 +30,53 @@ page_two <- tabPanel(
 #------------------------------------------------------------------------------#
 #page three content
 
+# page_three <- tabPanel(
+#  "Chart 2",
+#   titlePanel("test"),
+#  
+#  sliderInput("slider2", label = h3("Year Range"), min = 1850, 
+#              max = 2022, value = c(1850, 2022), sep = "", width = '100%'),
+#  
+#  selectInput("Location", label = h3("Select Country"),
+#              choices = c(data_malnutrition$Country)),
+#   
+# )
+
+
+year_range <- range(data_malnutrition$Year)
+# print(year_range)
+
 page_three <- tabPanel(
- "Chart 2",
-  titlePanel("test"),
- 
- sliderInput("slider2", label = h3("Year Range"), min = 1850, 
-             max = 2022, value = c(1850, 2022), sep = "", width = '100%'),
- 
- selectInput("Location", label = h3("Select Country"),
-             choices = c(data_malnutrition$Country)),
+  "Chart 2",
+  titlePanel("Underweight Population of Countries"),
   
-)
-
-
-
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(inputId = "Country",
+                  label = "Select Country",
+                  choices = c(data_malnutrition$Country)), 
+      sliderInput(inputId = "Year",
+                  label = "Select Year Range",
+                  min = as.numeric(year_range[1]),
+                  max = as.numeric(year_range[2]),
+                  value = year_range,
+                  sep = "")),
+    
+    mainPanel(
+      plotOutput("UnderweightChart")
+  )
+))
 
 #------------------------------------------------------------------------------#
 #page 4 content 
+
 page_four <- tabPanel(
   "Summary"
 )
 
 #------------------------------------------------------------------------------#
-
 #page 5 content 
+
 page_five <- tabPanel(
   "Report",
   h1("Combating World Hunger through Data Analysis"),
@@ -188,19 +214,13 @@ page_five <- tabPanel(
   h5("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
   h5("Borgen Projeect: https://borgenproject.org/effects-of-hunger-on-education/"),
   h5()
-
-
-  
-  
- 
   
 )
 
 
 #------------------------------------------------------------------------------#
-
-
 # combine pages
+
 ui <- navbarPage(
   "Combatting World Hunger Through Data Analysis",
   page_one,
