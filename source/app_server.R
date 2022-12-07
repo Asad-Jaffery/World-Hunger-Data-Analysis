@@ -81,9 +81,13 @@ server <- function(input, output){
     
     output$UnderweightChart <- renderPlot({
       data_malnutrition <- data_malnutrition %>%
-        filter(Year >= input$Year[1], Year <= input$Year[2])
+         filter(Year >= input$Year[1], Year <= input$Year[2])
       
-      ggplot(data_malnutrition %>% filter(Country == input$Country)) +
+      
+      data_malnutrition <- data_malnutrition %>% 
+       filter(Country == input$country)
+      
+      ggplot(data_malnutrition) +
         geom_col(mapping = aes(x = Year,
                                y = Underweight)) +
         labs(title = "Underweight Population of Countries", 

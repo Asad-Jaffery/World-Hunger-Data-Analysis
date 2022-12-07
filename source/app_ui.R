@@ -13,7 +13,7 @@ page_one <- tabPanel(
 # page two content
 page_two <- tabPanel(
   "Chart 1",
-  titlePanel("Prevalence of Undernourishment by Country from 2001 to 2019"),
+  titlePanel("Prevalence of Undernourishment by Country"),
   
   sidebarLayout(
     sidebarPanel(
@@ -30,42 +30,31 @@ page_two <- tabPanel(
 #------------------------------------------------------------------------------#
 #page three content
 
-# page_three <- tabPanel(
-#  "Chart 2",
-#   titlePanel("test"),
-#  
-#  sliderInput("slider2", label = h3("Year Range"), min = 1850, 
-#              max = 2022, value = c(1850, 2022), sep = "", width = '100%'),
-#  
-#  selectInput("Location", label = h3("Select Country"),
-#              choices = c(data_malnutrition$Country)),
-#   
-# )
-
-
 year_range <- range(data_malnutrition$Year)
 # print(year_range)
 
 page_three <- tabPanel(
   "Chart 2",
-  titlePanel("Underweight Population of Countries"),
+  titlePanel("Undernourishment of Countries"),
   
   sidebarLayout(
     sidebarPanel(
-      selectInput(inputId = "Country",
-                  label = "Select Country",
+      selectInput(inputId = "country",
+                  label = "Select Country/Region",
                   choices = c(data_malnutrition$Country)), 
       sliderInput(inputId = "Year",
                   label = "Select Year Range",
                   min = as.numeric(year_range[1]),
                   max = as.numeric(year_range[2]),
                   value = year_range,
+                  step = 1,
                   sep = "")),
     
     mainPanel(
       plotOutput("UnderweightChart")
-  )
-))
+    )
+  ))
+
 
 #------------------------------------------------------------------------------#
 #page 4 content 
