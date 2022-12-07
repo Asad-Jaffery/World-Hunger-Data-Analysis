@@ -74,7 +74,7 @@ server <- function(input, output){
                               color = Country)) + 
       labs(title = "Prevalence of Undernourishment by Country from 2001 to 2019", 
            x = "Year",
-           y = "Prevalence of Undernourishment")
+           y = "Prevalence of Undernourishment (% of total population)")
   })
     
     output$range <- renderPrint({input$Year})

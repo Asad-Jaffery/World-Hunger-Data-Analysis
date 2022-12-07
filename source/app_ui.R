@@ -5,9 +5,52 @@ source("app_server.R")
 #page one content 
 
 page_one <- tabPanel(
-"Introduction"                   
-
+  
+  "Introduction",
+  titlePanel("Introduction"),
+  
+  sidebarPanel(
+    h3("Research Questions"),
+    p("What ?"),
+    p(" "),
+    
+    p("What ?"),
+    p("  "),
+    
+    p("What ?"),
+  ),
+  
+  mainPanel(
+    h3("Content Description"),
+    p("To study world hunger, we decided to use various datasets in order to represent 
+      the varying severity of world hunger around the globe, and highlight areas
+      where most efforts to combat world hunger must be placed. "),
+    
+    p("Our first dataset, the", strong("Prevalence of Undernourishment"),"allows
+      us to easily determine the countries which are most greatly affected by hunger.
+      The prevalence of undernourishment is calculated based on the percentage of 
+      population that is undernourished from the total population of that country. 
+      This set of data provides nearly two decades of tracking which allows us 
+      to look for trends on both a global and country scale.
+      The dataset was originally published online at", em("OurWorldInData.org"), " by
+      Max Roser and Hannah Ritchie in 2019 in the article, ", em("Hunger and Undernourishment"),
+      "and combines data from various organizations such as FAO, IFAD, UNICEF, WFP and WHO."),
+    
+    p("Our second dataset, the", strong("Country Wide Averages"), ", gives us specific
+      and necessary information on the different facets of malnutrition 
+      which are all very important for our analysis. Thanks to the manner 
+      in which the data is presented we can analyze the countries based on income 
+      levels and other factors which our other data sets do not provide. 
+      For our analysis, we focused on the “underweight” category as it most closely 
+      relates to seeing the trends in world hunger. This value is calculated from 
+      the total population of said country, and presented as a percentage."),
+    
+    img(
+      src = "https://media.istockphoto.com/id/895972780/vector/stop-hunger-illustration.jpg?s=612x612&w=0&k=20&c=bD4hMHey2xo7syyEny3ADg0F8p3p8XQijOYykEgUnYk="
+    ),
+  )
 )
+
 
 #------------------------------------------------------------------------------#
 # page two content
@@ -22,7 +65,17 @@ page_two <- tabPanel(
                   choices = c(data_undernourishment$Country))
     ),
   mainPanel(
-    plotOutput("UndernourishmentChart")
+    plotOutput("UndernourishmentChart"),
+    p(" "),
+    p("This chart depicts the prevalence of undernourishment by country and by year.
+      This percentage is based on the total population of each country by year, 
+      respectively. Through trends in the dataset we can see that for many countries
+      the total prevalence of undernourishment is decreasing, but still continues to 
+      be a pressing problem for developing or third world countries. It is important
+      to track the prevalence of undernourishment both by year and country to 
+      accurately understand the problem of hunger across the world. 
+      For this chart, only one country is graphed at a time, and can be changed
+      in order to not overwhelm user experience, but still depict a meaningful trend.")
   )
  )
 )
@@ -40,7 +93,7 @@ page_three <- tabPanel(
   sidebarLayout(
     sidebarPanel(
       selectInput(inputId = "country",
-                  label = "Select Country/Region",
+                  label = "Select Country",
                   choices = c(data_malnutrition$Country)), 
       sliderInput(inputId = "Year",
                   label = "Select Year Range",
@@ -51,7 +104,17 @@ page_three <- tabPanel(
                   sep = "")),
     
     mainPanel(
-      plotOutput("UnderweightChart")
+      plotOutput("UnderweightChart"),
+      p(" "),
+      p("The chart depicting underweight population by country represents the
+        total population of each country that is underweight. The reason we 
+        selected this dataset is because malnutrition is continuously a growing
+        problem and makes people's health more vulnerable. This original data set
+        includes many other data points about each country including the percent 
+        of the population which is  'wasting', 'overweight', 'stunting' , or 'underweight'.
+        We selected the “underweight” category as it best answered our research question
+        of how to combat world hunger and where efforts need to be made the most, 
+        based on the percentage of underweight people.")
     )
   ))
 
@@ -70,15 +133,15 @@ page_five <- tabPanel(
   "Report",
   h1("Combating World Hunger through Data Analysis"),
   # do we need to include the code name? 
-  h5("Info-201: Technical Foundations of Informatics - The Information School - 
+  p("Info-201: Technical Foundations of Informatics - The Information School - 
      University of Washington - Autumn 2022"),
   
-  h5("Asad Jaffery: asadjaf@uw.edu"), 
-  h5("Beliz Ozhan: beliz@uw.edu"),  
-  h5("Curt Tanaka: ctanakaa@uw.edu"),
+  p("Asad Jaffery: asadjaf@uw.edu"), 
+  p("Beliz Ozhan: beliz@uw.edu"),  
+  p("Curt Tanaka: ctanakaa@uw.edu"),
   
   h3("Abstract"),
-  h5("Prevalence of undernourishment varies from country to country and percentages have been fluctuating 
+  p("Prevalence of undernourishment varies from country to country and percentages have been fluctuating 
      over the years, making world hunger a difficult problem to combat. The 
      dataset we have chosen takes into account the percentage of undernourishment
      in over 150 countries from the years 2001 to 2019. Overall, world hunger was 
@@ -90,10 +153,10 @@ page_five <- tabPanel(
      is crucial in combatting this issue."),
   
   h3("Keywords"),
-  h5("World Hunger, Education, Hunger Rates by year"),
+  p("World Hunger, Education, Hunger Rates by year"),
   
   h3("Introduction"),
-  h5("Hunger and undernourishment are some of the leading causes of severe or fatal
+  p("Hunger and undernourishment are some of the leading causes of severe or fatal
      health consequences globally, especially in children. The main issue is lack 
      of access to food resources and a well balanced diet. By 2030, the United 
      Nations set a target to “end hunger” as part of their 
@@ -107,7 +170,7 @@ page_five <- tabPanel(
      world hunger."),
   
   h3("Problem Domain"),
-  h5("After a steady decline over the last decade, world hunger is again, on the 
+  p("After a steady decline over the last decade, world hunger is again, on the 
      rise. The COVID-19 pandemic has had a brutal effect on the entire world, 
      especially those on the brink of starvation. Unfortunately, world hunger has 
      reached nearly 10 percent since 2019, and the problem seems to only be 
@@ -117,7 +180,7 @@ page_five <- tabPanel(
      contribute to the fight against hunger."),
   
   h3("Direct and Indirect Stakeholders"),
-  h5("The people who are directly involved with the data (direct stakeholders) 
+  p("The people who are directly involved with the data (direct stakeholders) 
      are those who are getting an insufficient caloric intake. Since the data set
      we are looking at examines 176 countries, these people can be located in any
      of these countries. Individuals who would be examining this data, or using it
@@ -125,7 +188,7 @@ page_five <- tabPanel(
      stakeholders."),
   
   h3("Human Values"),
-  h5("The idea of attaining access to food being a human right is widely accepted.
+  p("The idea of attaining access to food being a human right is widely accepted.
      Infact, the 1966 International Covenant on Economic, Social and Cultural 
      Rights 'enshrined’ that idea after the right to food was recognized as a
      right to an adequate standard of living in the 1948 Universal Declaration 
@@ -136,7 +199,7 @@ page_five <- tabPanel(
      that every human being should have."),
   
   h3("Potential Benifits"),
-  h5("Besides the fact that every human has a right to a balanced, and full diet, 
+  p("Besides the fact that every human has a right to a balanced, and full diet, 
      studying world hunger, and eventually reaching zero hunger, has the potential
      to benefit the entire world in many ways. For instance: education. Studies
      have shown that children with a balanced diet, and a full caloric intake are
@@ -146,7 +209,7 @@ page_five <- tabPanel(
      result in a more sustainable workforce."),
   
   h3("Our Job"),
-  h5("The harms of human starvation start with the moral obligation that we all 
+  p("The harms of human starvation start with the moral obligation that we all 
      have. As humans who have full access to technology, education, and food, it 
      is our job to do our part in helping those who were born into less fortunate 
      circumstances. Thus, we have chosen to do our project on hunger rates around 
@@ -154,12 +217,12 @@ page_five <- tabPanel(
      have (see ‘Potential Benefits’)."),
   
   h3("Research Questions"),
-  h5("How has hunger and undernourishment progressed on a global scale, what 
+  p("How has hunger and undernourishment progressed on a global scale, what 
   trends have become apparent during the early twenty-first century?"),
-  h5("What countries have been hit hardest by the problems of hunger and 
+  p("What countries have been hit hardest by the problems of hunger and 
      undernourishment in the first decade of the 2000s and the second decade 
      of the 2000s, is there any relation between the two?"),
-  h5("How has the price of common food goods in all countries affected by 
+  p("How has the price of common food goods in all countries affected by 
      hunger and undernourishment (defined as a % of population greater than 10%) 
      from the years 2003 to 2020 affected the rates of hunger and 
      undernourishment?"),
@@ -167,7 +230,7 @@ page_five <- tabPanel(
   # dataset
   
   h3("Expected Implications"),
-  h5("Assuming that we find the answer to world hunger, there are many
+  p("Assuming that we find the answer to world hunger, there are many
      implications around it. First off, we must implement the model we have 
      created, starting with the countries with the largest sheer number of 
      individuals who are starving, as from a utilitarian perspective, that 
@@ -179,7 +242,7 @@ page_five <- tabPanel(
      focus on building that proper infrastructure to support their economy."),
   
   h3("Limitations"),
-  h5("- The first limitation to using this dataset is that the data fails to 
+  p("- The first limitation to using this dataset is that the data fails to 
      represent all people within a country. Many undernourished people or those 
      struggling with hunger may live in remote areas, where they will be missed 
      by the statisticians. Additionally, not every country across the globe has 
@@ -188,21 +251,23 @@ page_five <- tabPanel(
      address this limitation is to create a universal system for tracking 
      population changes. This could be one system where every person is entered, 
      that way all data remains true to the times."),
-  h5("- Another limitation in trying to solve the problem of world hunger is the 
-  disconnect between the data, policies, and actual implementation. Though this 
-  data is helpful to support policies that would push for more incentives to 
-  improve nourishment, it is very difficult to carry out actions and resources, 
-  making them readily accessible for everyone. Just by looking at these statistics
-  little can actually be done to end world hunger, however, these statistics are 
-  the first steps in highlighting the problem, and thus the first steps in making
-  change."),
+     
+     p("- Another limitation in trying to solve the problem of world hunger is the 
+    disconnect between the data, policies, and actual implementation. Though this 
+    data is helpful to support policies that would push for more incentives to 
+    improve nourishment, it is very difficult to carry out actions and resources, 
+    making them readily accessible for everyone. Just by looking at these statistics
+    little can actually be done to end world hunger, however, these statistics are 
+    the first steps in highlighting the problem, and thus the first steps in making
+    change."),
   
   
-  h5("Citations"),
-  h5("Sustainable Development Goals: https://sdgs.un.org/goals"),
-  h5("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
-  h5("Borgen Projeect: https://borgenproject.org/effects-of-hunger-on-education/"),
-  h5()
+  h3("Sources"),
+  p("Sustainable Development Goals: https://sdgs.un.org/goals"),
+  p("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
+  p("Borgen Project: https://borgenproject.org/effects-of-hunger-on-education/"),
+  p("Stock Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fstop-hunger-illustration-gm895972780-247475800&psig=AOvVaw35Xgs1C3lHIoRi3jfDkpur&ust=1670466525250000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCND56vK65vsCFQAAAAAdAAAAABAD"),
+  p()
   
 )
 
