@@ -214,7 +214,7 @@ page_five <- tabPanel(
      rise. The COVID-19 pandemic has had a brutal effect on the entire world, 
      especially those on the brink of starvation. Unfortunately, world hunger has 
      reached nearly 10 percent since 2019, and the problem seems to only be 
-     getting worse as the global rate of inflation is also rising (World Against Hunger).
+     getting worse as the global rate of inflation is also rising (", tags$a(href="https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/", "World Against Hunger"),").
      Thus, we have decided to pick a data set that studies the rates of hunger in
      176 countries around the world, on a year by year basis in hopes to 
      contribute to the fight against hunger."),
@@ -232,7 +232,7 @@ page_five <- tabPanel(
      Infact, the 1966 International Covenant on Economic, Social and Cultural 
      Rights 'enshrined’ that idea after the right to food was recognized as a
      right to an adequate standard of living in the 1948 Universal Declaration 
-     of Human Rights [(Office of the High Commissioner for Human Rights)](https://www.ohchr.org/sites/default/files/Documents/Publications/FactSheet34en.pdf). 
+     of Human Rights", tags$a(href="https://www.ohchr.org/sites/default/files/Documents/Publications/FactSheet34en.pdf", "(Office of the High Commissioner for Human Rights)"), "
      Thus, the stance that we are taking, is one of forward progression. Every human 
      has a right to food, and the issue of hunger is one that we, as privileged 
      individuals, are attempting to alleviate. Our human values are intrinsic rights 
@@ -244,7 +244,7 @@ page_five <- tabPanel(
      to benefit the entire world in many ways. For instance: education. Studies
      have shown that children with a balanced diet, and a full caloric intake are
      able to be more energetic in the classroom, and perform better in the 
-     academic environment (The Borgen Project). 
+     academic environment (", tags$a(href="https://borgenproject.org/effects-of-hunger-on-education/", "The Borgen Project"), "). 
      This also implies a more efficient world economy, as better education rates 
      result in a more sustainable workforce."),
   
@@ -363,11 +363,12 @@ page_five <- tabPanel(
 
   h3("References"),
   tags$a(href="https://sdgs.un.org/goals", "Sustainable Development Goals"),
-  # p("Sustainable Development Goals: https://sdgs.un.org/goals"),
-  p("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
-  p("Borgen Project: https://borgenproject.org/effects-of-hunger-on-education/"),
-  p("Stock Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fstop-hunger-illustration-gm895972780-247475800&psig=AOvVaw35Xgs1C3lHIoRi3jfDkpur&ust=1670466525250000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCND56vK65vsCFQAAAAAdAAAAABAD"),
-  p()
+  p("THE 17 GOALS | Sustainable Development. (2015). Retrieved December 7, 2022, from Un.org website: https://sdgs.un.org/goals"),
+  p("World Hunger Facts & Statistics | Action Against Hunger. (2022, October 13). Retrieved December 7, 2022, from Action Against Hunger website: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
+  p("Borgen Project. (2014, July 2). Effects of Hunger on Education | The Borgen Project. Retrieved December 7, 2022, from The Borgen Project website: https://borgenproject.org/effects-of-hunger-on-education/"),
+  p('Hunger, S. (2017, December 19). Stop Hunger Illustration. Retrieved December 7, 2022, from iStock website: https://www.istockphoto.com/vector/stop-hunger-illustration-gm895972780-247475800'),
+  p("Stack Overflow - Where Developers Learn, Share, & Build Careers. (2022). Retrieved December 7, 2022, from Stack Overflow website: https://stackoverflow.com/"),
+  p("Shiny - Widget Gallery. (2022). Retrieved December 7, 2022, from Rstudio.com website: https://shiny.rstudio.com/gallery/widget-gallery.html")
   
 )
 
