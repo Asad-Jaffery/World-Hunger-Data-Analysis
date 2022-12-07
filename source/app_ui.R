@@ -271,10 +271,10 @@ page_five <- tabPanel(
   
   h3("Datasets"),
   img(
-    src = "../source/datasets_summary_ss.png",
-    width = 600
+    src = "https://raw.githubusercontent.com/info201b-au2022/world_hunger/main/source/data_table_ss.png",
+    width = 800
   ),
-  
+  p(" "),
   tags$a(href="https://raw.githubusercontent.com/info201b-au2022/world_hunger/
          main/data/prevalence-of-undernourishment.csv", "Prevalence of Undernourishment Data"),
   p("The Prevalence of Undernourishment Dataset allows us to easily determine 
