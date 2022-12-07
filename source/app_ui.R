@@ -229,6 +229,25 @@ page_five <- tabPanel(
   
   tags$a(href="https://www.google.com", "Click here!"),
   # dataset
+  h3("Datasets"),
+  tags$a(href="https://raw.githubusercontent.com/info201b-au2022/world_hunger/
+         main/data/prevalence-of-undernourishment.csv", "Prevalence of Undernourishment Data"),
+  p("The Prevalence of Undernourishment Dataset allows us to easily determine 
+    the countries which are most greatly affected by hunger. To go along with 
+    this, this set of data provides nearly two decades of tracking which allows 
+    us to look for trends on both a global and country scale. This set contains 
+    3344 Unique observations and 4 unique variables. Dataset Originally
+    publish online at OurWorldInData.org by Max Roser and Hannah Ritchie in 2019
+    in the article Hunger and Undernourishment. By combining data from FAO, 
+    IFAD, UNICEF, WFP and WHO to create the data set above. Collected from Unicef."),
+  tags$a(href="https://raw.githubusercontent.com/info201b-au2022/world_hunger/
+         main/data/malnutrition-estimates.csv", "Malnutrition Estimates Data"),
+  p("The Malnutrition Dataset gives us specific and necessary 
+    information on the different facets of malnutrition which are all very 
+    important for our analysis. Thanks to the manner in which the data is 
+    presented we can analyze the countries based on income levels and other 
+    factors which our other data sets do not provide. This set includes 924 
+    Observations and 20 variables. Data collected by Unicef."),
   
   h3("Expected Implications"),
   p("Assuming that we find the answer to world hunger, there are many
