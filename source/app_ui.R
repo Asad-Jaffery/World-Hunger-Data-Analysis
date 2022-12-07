@@ -11,13 +11,15 @@ page_one <- tabPanel(
   
   sidebarPanel(
     h3("Research Questions"),
-    p("What ?"),
+    p("What has been the global trend in world hunger across various populations?"),
     p(" "),
     
-    p("What ?"),
+    p("What countries suffer from food insecurity and have the highest percentage of 
+      undernourished people?"),
     p("  "),
     
-    p("What ?"),
+    p("What is the difference between developing countries and developed countries
+      in terms of hunger percentages based on their populations?"),
   ),
   
   mainPanel(
@@ -36,7 +38,7 @@ page_one <- tabPanel(
       Max Roser and Hannah Ritchie in 2019 in the article, ", em("Hunger and Undernourishment"),
       "and combines data from various organizations such as FAO, IFAD, UNICEF, WFP and WHO."),
     
-    p("Our second dataset, the", strong("Country Wide Averages"), ", gives us specific
+    p("Our second dataset, the", strong("Malnutrition Estimates"), "gives us specific
       and necessary information on the different facets of malnutrition 
       which are all very important for our analysis. Thanks to the manner 
       in which the data is presented we can analyze the countries based on income 
@@ -66,6 +68,7 @@ page_two <- tabPanel(
     ),
   mainPanel(
     plotOutput("UndernourishmentChart"),
+    p(" "),
     p(" "),
     p("This chart depicts the prevalence of undernourishment by country and by year.
       This percentage is based on the total population of each country by year, 
@@ -106,6 +109,7 @@ page_three <- tabPanel(
     mainPanel(
       plotOutput("UnderweightChart"),
       p(" "),
+      p(" "),
       p("The chart depicting underweight population by country represents the
         total population of each country that is underweight. The reason we 
         selected this dataset is because malnutrition is continuously a growing
@@ -114,7 +118,13 @@ page_three <- tabPanel(
         of the population which is  'wasting', 'overweight', 'stunting' , or 'underweight'.
         We selected the “underweight” category as it best answered our research question
         of how to combat world hunger and where efforts need to be made the most, 
-        based on the percentage of underweight people.")
+        based on the percentage of underweight people."),
+      p("*It is important to note that in this dataset some countries are missing
+      data values for the percentage of underweight populations for a few years 
+      in between 1983 and 2019. This is due to the fact that data was not recorded,
+      and therefore cannot be included in our visualization. The year range 
+      slider is there in order to help orient each country's available data in a way 
+      that still displays a meaningful trend in underweight populations.")
     )
   ))
 
@@ -123,17 +133,47 @@ page_three <- tabPanel(
 #page 4 content 
 
 page_four <- tabPanel(
-  "Summary"
+  "Summary",
+  h3("Key Takeaways"),
+  
+  p("-By looking at national trends it can be understood that third world countries
+     such as Yemen or Afghanistan have had significantly higher rates of hunger 
+     and undernourishment over the years compared to other populations, and these
+     numbers are starting to rise again in light of current economic crises, 
+     due to the pandemic or other extraneous factors."),
+  p(" "),
+  
+  p("-The prevalence of undernourishment for the world somewhat steadily
+  declined from 2001 until 2018, but since 2019 the data trends show a rising 
+  curve due to the growing gap between wealthy countries and poorer countries 
+  and rising populations."),
+  p(" "),
+  
+  p("-In the United States of America, according to the malnutrition estimates
+  of underweight populations, the underweight percentage of the total population
+  has decreased by 50% from 2000 to 2012."),
+  h1(" "),
+  h1(" "),
+  
+  img(
+    src = "https://www.awarenessdays.com/wp-content/uploads/2021/10/We-are-one-global-family-1.png",
+    width = 600
+  ),
+  p(" "),
+  em("World Hunger Day is May 28. Millions of people across the world are
+    still suffering chronic hunger. It is important to bring awareness to this
+    issue and help increase food security across the globe.")
 )
-
 #------------------------------------------------------------------------------#
 #page 5 content 
 
 page_five <- tabPanel(
   "Report",
   h1("Combating World Hunger through Data Analysis"),
-  # do we need to include the code name? 
-  p("Info-201: Technical Foundations of Informatics - The Information School - 
+  
+  h2("Project 'Dub H'"),
+  
+  p("Affiliation: Info-201: Technical Foundations of Informatics - The Information School - 
      University of Washington - Autumn 2022"),
   
   p("Asad Jaffery: asadjaf@uw.edu"), 
@@ -281,8 +321,47 @@ page_five <- tabPanel(
     the first steps in highlighting the problem, and thus the first steps in making
     change."),
   
+  h3("Findings"),
+  p("The vast majority of countries have had some sort of decrease in the percent of 
+  their population that is undernourished. For many of these countries, we can see that 
+  the percent of undernourishment is lower in 2019 than it was in 2001, which shows progress. 
+  However, the cycle that each country has followed in order to reach that point significantly 
+  differs. For instance, Turkmenistan had a gradual decline in the percent of its population 
+  that was undernourished, until about 2007, where it started to spike again, until it decreased 
+  rapidly. This differs from Tunisia, which has a (mostly) gradual decrease from 2001 till 2015, 
+  where it leveled out before increasing. The exception to this trend of reduction, are countries 
+  that have had major changes in their social, political, or economic state. This includes countries 
+  like Yemen (humanitarian crisis), or Venezuela (inflation)."), 
+
+  p("The main finding of the data that comes from the undernourishment chart is that 
+  undernourishment (throughout the entire world) peaked in the early 2000’s. We find this 
+  to be the case for most of the countries. Although there have been spikes in recent years, 
+  they tend to not last for long. We can assume that this rapid decrease of these spikes stems
+  from the development of countries and their infrastructure over the years"),
   
-  h3("Sources"),
+  h3("Discussion"),
+  p("With the rising stability of the developed world, there becomes a larger gap between them 
+  and the developing world. We believe that the developed world has an obligation to help progress 
+  the countries that are being left behind, as they are the ones who are contributing to the poor 
+  economic states of developing countries (i.e humanitarian crisis due to wars, sanctions, etc.)"),
+  
+  h3("Conclusion"),
+  p("The progression of the majority of the world has become apparent when examining the undernourished 
+  populations of each country. Throughout the world, there has been a steady decline in said population,
+  however it has started to rise again. We can attribute this to the growing gap between developed 
+  and developing countries. Countries like America are becoming increasingly healthy, with less 
+  people suffering from issues like undernourishment and starvation. However, countries like 
+  Afghanistan, Yemen, and Venezuela have been facing the issue of a rising undernourished population
+  due to the economic crisis that they have experienced. Oue data examinations shed light on the fact 
+  that developed countries have an obligation to help close the gap of health inequality to reach an 
+  equitable world."),
+  
+  h3("Acknowledgments"),
+  p("We would like to thank our professor David G Hendry, and our teaching assistant, 
+  Parinita Shanthakumar Tyavanagimatt for guiding and assisting us throughout this project."), 
+  
+
+  h3("References"),
   tags$a(href="https://sdgs.un.org/goals", "Sustainable Development Goals"),
   # p("Sustainable Development Goals: https://sdgs.un.org/goals"),
   p("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),

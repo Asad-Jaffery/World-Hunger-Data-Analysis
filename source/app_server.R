@@ -17,20 +17,6 @@ data_undernourishment <- undernourishment_data %>%
   group_by(Country) %>%
   select(Country, Year, Prevalence_of_Undernourishment)
 
-
-# server <- function(input, output){
-#   
-#   output$UndernourishmentChart<- renderPlot({
-#     
-#     ggplot(data_undernourishment %>% filter(Country == input$Country)) +
-#       geom_line(mapping = aes(x = Year, y = Prevalence_of_Undernourishment,
-#                               color = Country)) + 
-#       labs(title = "Prevalence of Undernourishment by Country from 2001 to 2019", 
-#            x = "Year",
-#            y = "Prevalence of Undernourishment")
-#   })
-# }
-
 #------------------------------------------------------------------------------#
 
 #interactive Visualization two
@@ -43,24 +29,6 @@ data_malnutrition <- malnutrition_data %>%
   na.omit() %>%
   group_by(Country) %>%
   select(Country, Year, Underweight) 
-
-#View(data_malnutrition)
-
-# server <- function(input, output){
-#   output$range <- renderPrint({input$Year})
-#   
-#   output$UnderweightChart <- renderPlot({
-#     data_malnutrition <- data_malnutrition %>%
-#       filter(Year >= input$Year[1], Year <= input$Year[2])
-#     
-#     ggplot(data_malnutrition %>% filter(Country == input$Country)) +
-#       geom_col(mapping = aes(x = Year,
-#                              y = Underweight)) +
-#       labs(title = "Underweight Population of Countries", 
-#            x = "Year",
-#            y = "Underweight Population")
-#   })
-# }
 
 #------------------------------------------------------------------------------#
 # Server
