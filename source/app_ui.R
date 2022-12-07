@@ -302,7 +302,7 @@ page_five <- tabPanel(
      focus on building that proper infrastructure to support their economy."),
   
   h3("Limitations"),
-  p("- The first limitation to using this dataset is that the data fails to 
+  p("The first limitation to using this dataset is that the data fails to 
      represent all people within a country. Many undernourished people or those 
      struggling with hunger may live in remote areas, where they will be missed 
      by the statisticians. Additionally, not every country across the globe has 
@@ -312,7 +312,7 @@ page_five <- tabPanel(
      population changes. This could be one system where every person is entered, 
      that way all data remains true to the times."),
      
-     p("- Another limitation in trying to solve the problem of world hunger is the 
+     p("Another limitation in trying to solve the problem of world hunger is the 
     disconnect between the data, policies, and actual implementation. Though this 
     data is helpful to support policies that would push for more incentives to 
     improve nourishment, it is very difficult to carry out actions and resources, 
