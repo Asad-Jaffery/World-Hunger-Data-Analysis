@@ -292,7 +292,9 @@ page_five <- tabPanel(
     important for our analysis. Thanks to the manner in which the data is 
     presented we can analyze the countries based on income levels and other 
     factors which our other data sets do not provide. This set includes 924 
-    Observations and 20 variables. Data collected by Unicef."),
+    Observations and 20 variables. Data collected by Unicef. The data came from 
+    the countries in the set but was compiled by UNICEF to have a better 
+    understanding of the standing of state of food security of a country wide and global scale."),
   
   h3("Findings"),
   p("The vast majority of countries have had some sort of decrease in the percent of 
