@@ -158,16 +158,16 @@ page_five <- tabPanel(
   h3("Introduction"),
   p("Hunger and undernourishment are some of the leading causes of severe or fatal
      health consequences globally, especially in children. The main issue is lack 
-     of access to food resources and a well balanced diet. By 2030, the United 
-     Nations set a target to “end hunger” as part of their 
-     Sustainable Development goals. Looking at this
-     dataset, however, hunger and undernourishment is still a problem around the 
-     world, even if percentages have declined. We plan to address the issue of 
-     undernourishment, by looking at the trends around the world through this 
-     dataset, and to highlight which countries need more support than others in 
-     food supply and dietary education. By measuring which populations have the 
-     largest percentage of insufficient diets, action can be taken to truly end 
-     world hunger."),
+     of access to food resources and a well balanced diet. By 2030, the United
+     Nations set a target to “end hunger” as part of their", 
+     tags$a(href="https://sdgs.un.org/goals", "Sustainable Development Goals"),
+    ". Looking at this dataset, however, hunger and undernourishment
+    is still a problem around the world, even if percentages have declined.
+    We plan to address the issue of undernourishment, by looking at the trends 
+    around the world through this dataset, and to highlight which countries need
+    more support than others in food supply and dietary education. By measuring
+    which populations have the largest percentage of insufficient diets, 
+    action can be taken to truly end world hunger."),
   
   h3("Problem Domain"),
   p("After a steady decline over the last decade, world hunger is again, on the 
@@ -227,6 +227,7 @@ page_five <- tabPanel(
      from the years 2003 to 2020 affected the rates of hunger and 
      undernourishment?"),
   
+  tags$a(href="https://www.google.com", "Click here!"),
   # dataset
   
   h3("Expected Implications"),
@@ -263,7 +264,8 @@ page_five <- tabPanel(
   
   
   h3("Sources"),
-  p("Sustainable Development Goals: https://sdgs.un.org/goals"),
+  tags$a(href="https://sdgs.un.org/goals", "Sustainable Development Goals"),
+  # p("Sustainable Development Goals: https://sdgs.un.org/goals"),
   p("Office of the High Commissioner for Human Rights: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
   p("Borgen Project: https://borgenproject.org/effects-of-hunger-on-education/"),
   p("Stock Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fstop-hunger-illustration-gm895972780-247475800&psig=AOvVaw35Xgs1C3lHIoRi3jfDkpur&ust=1670466525250000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCND56vK65vsCFQAAAAAdAAAAABAD"),
