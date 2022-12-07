@@ -294,38 +294,6 @@ page_five <- tabPanel(
     factors which our other data sets do not provide. This set includes 924 
     Observations and 20 variables. Data collected by Unicef."),
   
-  h3("Expected Implications"),
-  p("Assuming that we find the answer to world hunger, there are many
-     implications around it. First off, we must implement the model we have 
-     created, starting with the countries with the largest sheer number of 
-     individuals who are starving, as from a utilitarian perspective, that 
-     would be the most ‘moral’ implementation. Next, we would expect the rate 
-     of education to increase, as children can now focus on school (one of the
-     next objectives would be to increase education access to those who don’t 
-     already have it).  After doing so, the economic implications would start 
-     to show, as countries who were struggling with starvation would be able to 
-     focus on building that proper infrastructure to support their economy."),
-  
-  h3("Limitations"),
-  p("The first limitation to using this dataset is that the data fails to 
-     represent all people within a country. Many undernourished people or those 
-     struggling with hunger may live in remote areas, where they will be missed 
-     by the statisticians. Additionally, not every country across the globe has 
-     an accurate way to measure total census, therefore, the percentage of hunger
-     (which is based on the main population) may not be accurate. One way to 
-     address this limitation is to create a universal system for tracking 
-     population changes. This could be one system where every person is entered, 
-     that way all data remains true to the times."),
-     
-     p("Another limitation in trying to solve the problem of world hunger is the 
-    disconnect between the data, policies, and actual implementation. Though this 
-    data is helpful to support policies that would push for more incentives to 
-    improve nourishment, it is very difficult to carry out actions and resources, 
-    making them readily accessible for everyone. Just by looking at these statistics
-    little can actually be done to end world hunger, however, these statistics are 
-    the first steps in highlighting the problem, and thus the first steps in making
-    change."),
-  
   h3("Findings"),
   p("The vast majority of countries have had some sort of decrease in the percent of 
   their population that is undernourished. For many of these countries, we can see that 
@@ -372,6 +340,7 @@ page_five <- tabPanel(
   p("World Hunger Facts & Statistics | Action Against Hunger. (2022, October 13). Retrieved December 7, 2022, from Action Against Hunger website: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
   p("Borgen Project. (2014, July 2). Effects of Hunger on Education | The Borgen Project. Retrieved December 7, 2022, from The Borgen Project website: https://borgenproject.org/effects-of-hunger-on-education/"),
   p('Hunger, S. (2017, December 19). Stop Hunger Illustration. Retrieved December 7, 2022, from iStock website: https://www.istockphoto.com/vector/stop-hunger-illustration-gm895972780-247475800'),
+  p("World Hunger Day 2022 - Awareness Days Events Calendar 2022 & 2023. (2022, May 10). Retrieved December 7, 2022, from Awareness Days Events Calendar 2022 & 2023 website: https://www.awarenessdays.com/awareness-days-calendar/world-hunger-day-2022/"),
   p("Stack Overflow - Where Developers Learn, Share, & Build Careers. (2022). Retrieved December 7, 2022, from Stack Overflow website: https://stackoverflow.com/"),
   p("Shiny - Widget Gallery. (2022). Retrieved December 7, 2022, from Rstudio.com website: https://shiny.rstudio.com/gallery/widget-gallery.html")
   
