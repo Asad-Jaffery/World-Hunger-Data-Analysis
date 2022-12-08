@@ -26,7 +26,7 @@ page_one <- tabPanel(
     h3("Content Description"),
     p("To study world hunger, we decided to use various datasets in order to represent 
       the varying severity of world hunger around the globe, and highlight areas
-      where most efforts to combat world hunger must be placed. "),
+      where most efforts to combat world hunger must be placed."),
     
     p("Our first dataset, the", strong("Prevalence of Undernourishment"),"allows
       us to easily determine the countries which are most greatly affected by hunger.
@@ -38,7 +38,7 @@ page_one <- tabPanel(
       Max Roser and Hannah Ritchie in 2019 in the article, ", em("Hunger and Undernourishment"),
       "and combines data from various organizations such as FAO, IFAD, UNICEF, WFP and WHO."),
     
-    p("Our second dataset, the", strong("Malnutrition Estimates"), "gives us specific
+    p("Our second dataset,", strong("Malnutrition Estimates"), "gives us specific
       and necessary information on the different facets of malnutrition 
       which are all very important for our analysis. Thanks to the manner 
       in which the data is presented we can analyze the countries based on income 
@@ -68,7 +68,6 @@ page_two <- tabPanel(
     ),
   mainPanel(
     plotOutput("UndernourishmentChart"),
-    p(" "),
     p(" "),
     p("This chart depicts the prevalence of undernourishment by country and by year.
       This percentage is based on the total population of each country by year, 
@@ -109,14 +108,13 @@ page_three <- tabPanel(
     mainPanel(
       plotOutput("UnderweightChart"),
       p(" "),
-      p(" "),
       p("The chart depicting underweight population by country represents the
         total population of each country that is underweight. The reason we 
         selected this dataset is because malnutrition is continuously a growing
         problem and makes people's health more vulnerable. This original data set
         includes many other data points about each country including the percent 
         of the population which is  'wasting', 'overweight', 'stunting' , or 'underweight'.
-        We selected the “underweight” category as it best answered our research question
+        We selected the 'underweight' category as it best answered our research question
         of how to combat world hunger and where efforts need to be made the most, 
         based on the percentage of underweight people."),
       p("*It is important to note that in this dataset some countries are missing
@@ -136,7 +134,7 @@ page_four <- tabPanel(
   "Summary",
   h3("Key Takeaways"),
   
-  p("-By looking at national trends it can be understood that third world countries
+  p("-By looking at national trends it can be understood that developing countries
      such as Yemen or Afghanistan have had significantly higher rates of hunger 
      and undernourishment over the years compared to other populations, and these
      numbers are starting to rise again in light of current economic crises, 
@@ -152,12 +150,13 @@ page_four <- tabPanel(
   p("-In the United States of America, according to the malnutrition estimates
   of underweight populations, the underweight percentage of the total population
   has decreased by 50% from 2000 to 2012."),
-  h1(" "),
-  h1(" "),
+  p(" "),
+  p(" "),
+  p(" "),
   
   img(
     src = "https://www.awarenessdays.com/wp-content/uploads/2021/10/We-are-one-global-family-1.png",
-    width = 600
+    width = 800
   ),
   p(" "),
   em("World Hunger Day is May 28. Millions of people across the world are
@@ -171,7 +170,7 @@ page_five <- tabPanel(
   "Report",
   h1("Combating World Hunger through Data Analysis"),
   
-  h2("Project 'Dub H'"),
+  h3("Project 'Dub H'"),
   
   p("Affiliation: Info-201: Technical Foundations of Informatics - The Information School - 
      University of Washington - Autumn 2022"),
@@ -193,7 +192,7 @@ page_five <- tabPanel(
      is crucial in combatting this issue."),
   
   h3("Keywords"),
-  p("World Hunger, Education, Hunger Rates by year"),
+  p("World Hunger, Malnutrition, Food Security, Undernourishment"),
   
   h3("Introduction"),
   p("Hunger and undernourishment are some of the leading causes of severe or fatal
@@ -257,17 +256,22 @@ page_five <- tabPanel(
      have (see ‘Potential Benefits’)."),
   
   h3("Research Questions"),
-  p("How has hunger and undernourishment progressed on a global scale, what 
-  trends have become apparent during the early twenty-first century?"),
-  p("What countries have been hit hardest by the problems of hunger and 
-     undernourishment in the first decade of the 2000s and the second decade 
-     of the 2000s, is there any relation between the two?"),
-  p("How has the price of common food goods in all countries affected by 
-     hunger and undernourishment (defined as a % of population greater than 10%) 
-     from the years 2003 to 2020 affected the rates of hunger and 
-     undernourishment?"),
+  p("What has been the global trend in world hunger across various populations?
+    This question is important as it depicts the extent to which hunger is 
+      still a problem that needs to be solved. This question is motivated by 
+      the goal to end world hunger and eradicate the severity of the issue."),
   
-  tags$a(href="https://www.google.com", "Click here!"),
+  p("What countries suffer from food insecurity and have the highest percentage of 
+      undernourished people? This question is important to understand where
+      more efforts need to be made to combat hunger, and is motivated by the 
+      idea to increase nutrition resources for developing countries."),
+  
+  p("What is the difference between developing countries and developed countries
+      in terms of hunger percentages based on their populations?This question
+      is important to understand what factors cause world hunger and what the gap is
+      like between a country that is developed versus still developing.
+      The motivation behind this is to eradicate discrepancy and make sure 
+      every country has equal opportunity to end their hunger."),
   
   h3("Datasets"),
   img(
@@ -337,7 +341,6 @@ page_five <- tabPanel(
   
 
   h3("References"),
-  tags$a(href="https://sdgs.un.org/goals", "Sustainable Development Goals"),
   p("THE 17 GOALS | Sustainable Development. (2015). Retrieved December 7, 2022, from Un.org website: https://sdgs.un.org/goals"),
   p("World Hunger Facts & Statistics | Action Against Hunger. (2022, October 13). Retrieved December 7, 2022, from Action Against Hunger website: https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/"),
   p("Borgen Project. (2014, July 2). Effects of Hunger on Education | The Borgen Project. Retrieved December 7, 2022, from The Borgen Project website: https://borgenproject.org/effects-of-hunger-on-education/"),
