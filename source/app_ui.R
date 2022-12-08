@@ -77,7 +77,11 @@ page_two <- tabPanel(
       to track the prevalence of undernourishment both by year and country to 
       accurately understand the problem of hunger across the world. 
       For this chart, only one country is graphed at a time, and can be changed
-      in order to not overwhelm user experience, but still depict a meaningful trend.")
+      in order to not overwhelm user experience, but still depict a meaningful trend."),
+    p("*It is important to note that some developed countries, such as the United States,
+      appear to have constant lines at 2.5% for the prevalence of undernourishment
+      as the issue is neither growing or decreasing over the years in these respective
+      countries.")
   )
  )
 )
@@ -86,7 +90,6 @@ page_two <- tabPanel(
 #page three content
 
 year_range <- range(data_malnutrition$Year)
-# print(year_range)
 
 page_three <- tabPanel(
   "Chart 2",
@@ -134,28 +137,32 @@ page_four <- tabPanel(
   "Summary",
   h3("Key Takeaways"),
   
-  p("-By looking at national trends it can be understood that developing countries
-     such as Yemen or Afghanistan have had significantly higher rates of hunger 
-     and undernourishment over the years compared to other populations, and these
+  p("-By looking at national trends it can be understood that ", strong("developing countries"),
+     "such as Yemen or Afghanistan have had significantly ", strong("higher rates of hunger 
+     and undernourishment"), "over the years compared to other populations, and these
      numbers are starting to rise again in light of current economic crises, 
      due to the pandemic or other extraneous factors."),
   p(" "),
   
-  p("-The prevalence of undernourishment for the world somewhat steadily
+  p("-The prevalence of undernourishment for the ", strong("world"), "somewhat steadily
   declined from 2001 until 2018, but since 2019 the data trends show a rising 
-  curve due to the growing gap between wealthy countries and poorer countries 
-  and rising populations."),
+  curve due to the",  strong("growing gap between wealthy countries and poorer countries"), 
+  "of populations that are at suffering from hunger."),
   p(" "),
   
-  p("-In the United States of America, according to the malnutrition estimates
-  of underweight populations, the underweight percentage of the total population
-  has decreased by 50% from 2000 to 2012."),
+  p("-According to the malnutrition estimates of underweight populations, 
+  in many ", strong("developed countries"), ", specifically in the United States of America, 
+  the ", strong("underweight percentage of the total population has decreased"), "by 50% 
+  from 2000 to 2012."),
   p(" "),
   p(" "),
   p(" "),
   
   img(
     src = "https://www.awarenessdays.com/wp-content/uploads/2021/10/We-are-one-global-family-1.png",
+    alt = "World Hunger Day is May 28. Millions of people across the world are
+    still suffering chronic hunger. It is important to bring awareness to this
+    issue and help increase food security across the globe.",
     width = 800
   ),
   p(" "),
@@ -237,7 +244,7 @@ page_five <- tabPanel(
      individuals, are attempting to alleviate. Our human values are intrinsic rights 
      that every human being should have."),
   
-  h3("Potential Benifits"),
+  h3("Potential Benefits"),
   p("Besides the fact that every human has a right to a balanced, and full diet, 
      studying world hunger, and eventually reaching zero hunger, has the potential
      to benefit the entire world in many ways. For instance: education. Studies
