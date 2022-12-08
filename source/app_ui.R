@@ -93,7 +93,7 @@ year_range <- range(data_malnutrition$Year)
 
 page_three <- tabPanel(
   "Chart 2",
-  titlePanel("Undernourishment of Countries"),
+  titlePanel("Underweight Population of Countries"),
   
   sidebarLayout(
     sidebarPanel(
@@ -134,42 +134,47 @@ page_three <- tabPanel(
 #page 4 content 
 
 page_four <- tabPanel(
-  "Summary",
-  h3("Key Takeaways"),
   
-  p("-By looking at national trends it can be understood that ", strong("developing countries"),
-     "such as Yemen or Afghanistan have had significantly ", strong("higher rates of hunger 
+  "Summary",
+  titlePanel("Summary Information"),
+  
+  sidebarPanel(
+    h3("Key Takeaways"),
+    p("-By looking at national trends it can be understood that ", strong("developing countries"),
+      "such as Yemen or Afghanistan have had significantly ", strong("higher rates of hunger 
      and undernourishment"), "over the years compared to other populations, and these
      numbers are starting to rise again in light of current economic crises, 
      due to the pandemic or other extraneous factors."),
-  p(" "),
-  
-  p("-The prevalence of undernourishment for the ", strong("world"), "somewhat steadily
+    p(" "),
+    
+    p("-The prevalence of undernourishment for the ", strong("world"), "somewhat steadily
   declined from 2001 until 2018, but since 2019 the data trends show a rising 
   curve due to the",  strong("growing gap between wealthy countries and poorer countries"), 
-  "of populations that are at suffering from hunger."),
-  p(" "),
-  
-  p("-According to the malnutrition estimates of underweight populations, 
+      "of populations that are at suffering from hunger."),
+    p(" "),
+    
+    p("-According to the malnutrition estimates of underweight populations, 
   in many ", strong("developed countries"), ", specifically in the United States of America, 
   the ", strong("underweight percentage of the total population has decreased"), "by 50% 
   from 2000 to 2012."),
-  p(" "),
-  p(" "),
-  p(" "),
+  ),
   
-  img(
-    src = "https://www.awarenessdays.com/wp-content/uploads/2021/10/We-are-one-global-family-1.png",
-    alt = "World Hunger Day is May 28. Millions of people across the world are
+  mainPanel(
+    h3("World Hunger Day"),
+    img(
+      src = "https://www.awarenessdays.com/wp-content/uploads/2021/10/We-are-one-global-family-1.png",
+      alt = "World Hunger Day is May 28. Millions of people across the world are
     still suffering chronic hunger. It is important to bring awareness to this
     issue and help increase food security across the globe.",
-    width = 800
-  ),
-  p(" "),
-  em("World Hunger Day is May 28. Millions of people across the world are
+      width = 700
+    ),
+    p(" "),
+    em("World Hunger Day is May 28. Millions of people across the world are
     still suffering chronic hunger. It is important to bring awareness to this
-    issue and help increase food security across the globe.")
+    issue and help increase food security across the globe."),
+  )
 )
+
 #------------------------------------------------------------------------------#
 #page 5 content 
 
@@ -329,7 +334,7 @@ page_five <- tabPanel(
   p("With the rising stability of the developed world, there becomes a larger gap between them 
   and the developing world. We believe that the developed world has an obligation to help progress 
   the countries that are being left behind, as they are the ones who are contributing to the poor 
-  economic states of developing countries (i.e humanitarian crisis due to wars, sanctions, etc.)"),
+  economic states of developing countries (i.e humanitarian crisis due to wars, sanctions, etc.)."),
   
   h3("Conclusion"),
   p("The progression of the majority of the world has become apparent when examining the undernourished 
